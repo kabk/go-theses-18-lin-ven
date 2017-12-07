@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #97a8a4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  	font-family:Verdana, Geneva, sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+h1,h2,p,ul{
+	color:white;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	margin-bottom: 30px;
+
+}
+
+p,ul{
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+
+
+#intro{
+	width:100vw;
+	height:100vh;
+	margin:0;
+	text-align:center;
+}
+
+#wakinglife{
+	margin-top:15vh;
+	height:70vh;
+}
+
+#title{
+	text-align: center;
+}
+
+.content{
+	width:50vw;
+	margin:auto;
+}
+
+.question{
+	border-style: solid;
+	border-color:white;
+    border-width: 3px;
+}
