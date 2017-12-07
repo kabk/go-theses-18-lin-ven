@@ -2,14 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css">.
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript">
+		function toggleSubs( ) {
+			var menuitem = $( this );
+			var submenu = menuitem.next( '.submenu' );
+			console.log( submenu );
+			submenu.slideToggle( );
+		}
+		
+		function initPage( ) {
+			$( '.block h1' ).click( toggleSubs );
+		}
+
+
+		$( document ).ready( initPage );
+
+	</script>
+
 	<title>Thesis Lin Ven</title>
 </head>
 
 
 <body>
 	<div id="intro">
-		<h2 style="font-style:italic">“No worse than us. He is all action, no theory. We are all theory and no action.”</h2>
+		<h2 style="font-style:italic; margin-top:30px">“No worse than us. He is all action, no theory. We are all theory and no action.”</h2>
 		<video id="wakinglife" controls="controls" onclick="this.play()">
 		  <source src="index/waking_life.mp4" type="video/mp4">
 		  Your browser does not support the video tag.
@@ -72,23 +90,36 @@
 			<h2>What makes a thought transform into an action?</h2>
 
 			<p>When I want to move my fingers tot type something, I don’t
-experience the physical chain of actions needed to make my
-fingers move.
-Something that’s not concrete (a thought) is translated in to
-a concrete action (movement of the body). What happens
-between those two events? Deepak Chopra, educated as a
-doctor and later specialized in alternative medicine, talks
-7
-about this mysterious gap between a thought and an
-action in his book Quantum Healing, Exploring the Frontiers
-of Mind / Body Medicine. Chopra talks about the importance
-of the discovery of neuropeptides. Neuropeptides
-are small protein-like molecules (peptides) used by neurons
-to communicate with each other. They are neuronal signaling
-molecules that influence the activity of the brain and the
-body in specific ways.x. Chopra visualizes the mystery between
-a thought and an action in the following diagram.</p>
+			experience the physical chain of actions needed to make my
+			fingers move.
+			Something that’s not concrete (a thought) is translated in to
+			a concrete action (movement of the body). What happens
+			between those two events? Deepak Chopra, educated as a
+			doctor and later specialized in alternative medicine, talks
+			7
+			about this mysterious gap between a thought and an
+			action in his book Quantum Healing, Exploring the Frontiers
+			of Mind / Body Medicine. Chopra talks about the importance
+			of the discovery of neuropeptides. Neuropeptides
+			are small protein-like molecules (peptides) used by neurons
+			to communicate with each other. They are neuronal signaling
+			molecules that influence the activity of the brain and the
+			body in specific ways.x. Chopra visualizes the mystery between
+			a thought and an action in the following diagram.</p>
+			<h2 style="text-decoration:underline">The practice of visualising ideas</h2>
+			<h2 style="text-decoration:underline">Intellect is an important tool to be able
+			to position yourself within a discourse.
+			But it doesn’t stop by formulating your
+			opinion - the next step is to create an alternative.
+			This alternative can be either
+			hypothetical or concrete (real).</h2>
+			<h2 style="text-decoration:underline">Fiction v.s. Reality</h2>
+			<h2 style="text-decoration:underline">Examples</h2>
+			<h2 style="text-decoration:underline">Theory and action are inseparable aspects of (graphic) design.</h2>
+			<h2 style="text-decoration:underline">The connection of theory and action could be seen as a spectrum.</h2>
+			<h2 style="text-decoration:underline">The subject should be leading in the position of your design approach on this spectrum.</h2>
 	</div>
+
 	
 </body>
 </html>
