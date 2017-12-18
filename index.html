@@ -1,125 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<title>Lin Ven</title>
+	<meta property="og:image" content="still.jpg" />
+	<meta charset="utf8"/>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript">
+		window.onload = function( ) { };
+
 		function toggleSubs( ) {
 			var menuitem = $( this );
-			var submenu = menuitem.next( '.submenu' );
-			console.log( submenu );
+			var submenu = menuitem.find( '+ul' );
 			submenu.slideToggle( );
 		}
-		
-		function initPage( ) {
-			$( '.block h1' ).click( toggleSubs );
+
+		function doedanDown() {
+			var max = $( window ).height( );//800;
+			var distanceFromTop = $( window ).scrollTop();
+			var doedan = $('#doe_dan');
+
+
+			if ( distanceFromTop < max ) {
+				doedan.css( 'bottom', -distanceFromTop / 2 );
+			console.log( distanceFromTop  + ' ' + max );
+			} else {
+				doedan.css( 'bottom', -max / 2 );
+				//ven.css( 'bottom', -distanceFromTop / 2 );
+
+			}
 		}
 
+		function initPage( ) {
+			$( '#menu h3' ).click( toggleSubs );
+
+			$( document ).scroll( doedanDown );
+			doedanDown( );
+
+			$( document ).scroll( linDown );
+			linDown( );
+		}
 
 		$( document ).ready( initPage );
-
 	</script>
-
-	<title>Thesis Lin Ven</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	
 </head>
 
 
-<body>
-	<div id="intro">
-		<h2 style="font-style:italic; margin-top:30px">“No worse than us. He is all action, no theory. We are all theory and no action.”</h2>
-		<video id="wakinglife" controls="controls" onclick="this.play()">
-		  <source src="index/waking_life.mp4" type="video/mp4">
-		  Your browser does not support the video tag.
-		</video>
+<body class="index">
+
+	<div id="down">
+		<h3 style="margin-top:2vh; text-align:center">Thesis</h3>
+		<h3 style="margin-top:2vh; text-align:center">Lin Ven</h3>
 
 	</div>
 
-	<div id="title">
-		<h1>Goed idee...</h1>
-		<h1>...doe dan!</h1>
-		<h2 style="font-style:italic">action speaks louder than words</h2>
+	<div class="title" id="goed_idee">
+		<h2>GOED IDEE...</h2>
 	</div>
 
-	<div class="content">
-			
-			<p>While watching the movie Waking Life I came across a
-			scene that inspired me to write this thesis. In the scene you
-			see a group of young guys wandering around a city. They
-			have a long talk about very complicated and substantial
-			matter. It’s hard to follow what they are actually talking
-			about and it gives the viewer the feeling they are highly intellectial
-			and very well informed about complicated matter.
-			All of an sudden an old man attracts their attention. The
-			man is sitting in a 3-meter high pole. The guys look up and
-			ask the man how he ended up there and why he ended up
-			there. The man answers he is not exactly sure how he ended
-			up on this pole. There is a moment of silence after which
-			the guys ask the man if they could help him getting down
-			again. The man looks confused but answers that he’s actually
-			doing fine high up in the pole. The guys don’t understand
-			the man’s choice but decide to continue walking.</p>
-			<p>This scene brought up the following questions:</p>
 
-			<ul>
-				<li>How do I normally relate action and theory within my
-				design process?</li>
-				<li>Is there something like a perfect balance between thinking
-				and doing when it comes to designing?</li>
-				<li>Could you categorize people in a spectrum from thinking
-				to doing?</li>
-				<li>When do you start a project from a theoretical starting
-				point and when do you decide to start a project with a
-				concrete action?</li>
-				<li>If you start a project with an action are you always looking
-				for a reaction?</li>
-				<li>What is action? Aren’t some written theories as much action
-				as ‘concrete’ action? Theories also aim for reactions
-				right?</li>
-			</ul>
+	<div id="wrapper_intro">
+		<div id="menu">
+			<h3 class="work">Chapters</h3>
+				<ul class="submenu">
+					<li><a href="leftright.html">1</a></li>
+					<li><a href="fypw.html">2</a></li>
+					<li><a href="dart.html">3</a></li>
+					<li><a href="dart.html">4</a></li>
+					<li><a href="dart.html">5</a></li>
+				</ul>
+		</div>
 
-			<div class="question" style="text-align:center; margin-bottom:30px;">
-				<p style="margin-top:30px; margin-bottom:15px">Research question:</p>
-				<h2>How to generate action with your creative skills?</h2>
+<!-- 	<div id="introduction">
+		<div class= "images"><h3 style=" bottom:0; margin-left:15%; width:80%;">A case for applied graphic design</h3>
+		</div>
+
+			<h2 style=" bottom:0; margin-left:15%; width:80%;">How can you generate action with your design skills?</h2>
+
+	</div> -->
+		
+	<div class="panels">
+		<div class="panel-container">
+
+
+
+			<div class="panel-label">
+				<h2>Theory</h2>
 			</div>
 
-			<p>When talking about the relationship between thinking and
-			doing, I would like to examine the process within our own
-			bodies. The following question can be asked:</p>
+			<div class="panel-scrolling-container" style="background: rgba(0,0,0, .2);">
+				<div class="panel-scrolling-area">
+					<div class="panel-items">
+						<div class="preview-item">
+							<p>While watching the movie Waking Life I came across a scene that inspired me to write this thesis. In this specific scene you see a group of young guys wandering around a city. They have a long talk about very complicated and substantial matter. It is hard to follow what they are actually talking about and it gives the viewer the feeling they are highly intellectual and very well informed about complicated matter. All of a sudden an old man attracts their attention. The man is sitting in a 3-meter high pole. The guys look up and ask the man how and why he ended up there. The man answers he is not exactly sure how he ended up on this pole. There is a moment of silence after which the guys ask the man if they could help him getting down again. The man looks confused but answers that he’s actually doing fine high up in the pole. The guys don’t understand the man’s choice but decide to continue walking. The following monologue follows:
+							</p>
+							<h3>“No worse than us. He is all action, no theory. We are al theory and no action.”
+							</h3>
+							<table style="width:100%">
+							  <tr>
+							    <th>Theory</th>
+							    <th>Action</th> 
+							  </tr>
+							  <tr>
+							    <td>Ratio</td>
+							    <td>Reaction</td>
+							  
+							  </tr>
+							  <tr>
+							    <td>Immaterial</td>
+							    <td>Provocation</td>
+							  </tr>
+							  <tr>
+							    <td>John</td>
+							    <td>Doe</td>
+							  </tr>
+							</table>
+							<p>
+							Phasellus a eros eget nisi mollis iaculis lacinia ac lacus. Cras ut ipsum eget augue laoreet placerat at vitae mauris. Aenean vehicula ante in tortor iaculis egestas. Mauris feugiat tortor quis nisi varius, a pretium quam rhoncus. Suspendisse maximus, dui vitae consequat dictum, purus odio ultrices est, vitae sodales risus sapien at justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur malesuada porttitor tortor ac eleifend. Nulla nunc mi, interdum sed molestie efficitur, venenatis nec mauris. Praesent accumsan augue ex, eu rutrum magna tristique at. Nulla quis accumsan neque. Curabitur vehicula diam rhoncus ante ornare tristique ac venenatis elit. Curabitur ornare rutrum efficitur.
+							</p>
+							<p>
+							Nulla facilisi. Suspendisse a purus nec neque semper rutrum in sed massa. Suspendisse potenti. Mauris commodo iaculis vehicula. Sed rhoncus lacus a metus placerat, luctus posuere erat congue. Etiam sem quam, euismod eget mattis ut, dignissim nec dolor. Duis aliquet metus nec eros faucibus, in viverra velit tempor. Nulla eget tempus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque nisl massa, id malesuada sapien elementum eget.
+							</p>
+							<p>
+							Aliquam at dui nibh. Nulla mattis nisl ac elit euismod tincidunt. Praesent vehicula arcu sed pharetra hendrerit. Phasellus iaculis ante vel velit aliquam mattis. Proin tincidunt accumsan ligula, vel placerat ante eleifend eget. Sed eget convallis neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare luctus augue, vitae placerat leo auctor a. Aenean rutrum, libero eget elementum mattis, ex metus iaculis mi, eget dapibus lectus massa eu lectus.
+							</p>
+							<p>
+							Cras dictum vel mauris ut sagittis. Nunc sit amet convallis risus. Curabitur justo magna, feugiat eu elementum id, laoreet ac tortor. Donec ac malesuada tellus, nec scelerisque libero. Phasellus sed sodales ipsum, non rutrum sem. Suspendisse porta convallis nibh. Maecenas vel mi quis diam iaculis interdum. Morbi ex turpis, efficitur eu odio sagittis, efficitur cursus mauris. Proin maximus ex vitae leo semper, sed porttitor purus fringilla. In ultrices sodales felis sed consequat. Maecenas quis lorem sit amet orci interdum vulputate. Aliquam accumsan ipsum vel nunc luctus, pellentesque ornare ligula hendrerit. Vestibulum dapibus non arcu vitae blandit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<h2>What makes a thought transform into an action?</h2>
+		</div>
 
-			<p>When I want to move my fingers tot type something, I don’t
-			experience the physical chain of actions needed to make my
-			fingers move.
-			Something that’s not concrete (a thought) is translated in to
-			a concrete action (movement of the body). What happens
-			between those two events? Deepak Chopra, educated as a
-			doctor and later specialized in alternative medicine, talks
-			7
-			about this mysterious gap between a thought and an
-			action in his book Quantum Healing, Exploring the Frontiers
-			of Mind / Body Medicine. Chopra talks about the importance
-			of the discovery of neuropeptides. Neuropeptides
-			are small protein-like molecules (peptides) used by neurons
-			to communicate with each other. They are neuronal signaling
-			molecules that influence the activity of the brain and the
-			body in specific ways.x. Chopra visualizes the mystery between
-			a thought and an action in the following diagram.</p>
-			<h2 style="text-decoration:underline">The practice of visualising ideas</h2>
-			<h2 style="text-decoration:underline">Intellect is an important tool to be able
-			to position yourself within a discourse.
-			But it doesn’t stop by formulating your
-			opinion - the next step is to create an alternative.
-			This alternative can be either
-			hypothetical or concrete (real).</h2>
-			<h2 style="text-decoration:underline">Fiction v.s. Reality</h2>
-			<h2 style="text-decoration:underline">Examples</h2>
-			<h2 style="text-decoration:underline">Theory and action are inseparable aspects of (graphic) design.</h2>
-			<h2 style="text-decoration:underline">The connection of theory and action could be seen as a spectrum.</h2>
-			<h2 style="text-decoration:underline">The subject should be leading in the position of your design approach on this spectrum.</h2>
+
+
+		<div class="panel-container">
+
+			<div class="panel-label">
+				<h2>Practice</h2>
+			</div>
+
+			<div class="panel-scrolling-container" style="background: rgba(255,255,255,.2)" >
+				<div class="panel-scrolling-area">
+					<div class="panel-items">
+						<div class="preview-item">
+								<p>
+							Nullam dignissim, urna non interdum sollicitudin, sem magna auctor massa, eleifend sollicitudin dolor orci at elit. Maecenas eu tincidunt dolor, at molestie elit. Vestibulum consectetur nec dolor in facilisis. Maecenas id velit ut turpis varius efficitur. Nullam ac metus arcu. Aenean feugiat justo odio, eget fermentum nisi tristique quis. Aliquam ut orci vitae arcu lobortis interdum. Quisque ac velit mauris. Suspendisse eu scelerisque ipsum, vitae sollicitudin velit. Aliquam erat volutpat. Sed gravida turpis sit amet massa mattis, sed sodales nunc cursus. Proin sed convallis felis. Nunc tristique consectetur leo at porta.
+							</p>
+							<p>
+							Nullam tristique lacus velit, ut iaculis sem placerat ac. Duis et egestas ligula. Curabitur eget gravida risus, eu gravida urna. Sed vel fringilla risus. Aliquam ante nibh, pretium dapibus risus quis, lacinia sagittis neque. Integer auctor turpis purus. Ut elementum sollicitudin egestas. Suspendisse rutrum eleifend pellentesque. Vivamus nec dui sapien. Nulla et maximus lacus. Pellentesque venenatis ante id placerat porta. Suspendisse vitae tellus a elit vulputate egestas. Sed a consectetur purus, euismod maximus dolor. Praesent consectetur, sapien sit amet eleifend interdum, diam erat aliquam augue, fermentum aliquet erat elit quis tellus. Maecenas lectus turpis, mollis ut massa sed, auctor aliquet augue.
+							</p>
+							<p>
+							In id pellentesque nibh, a fringilla lorem. Ut varius, dui non euismod aliquam, nisi elit pretium ipsum, a egestas leo urna id tellus. Donec pretium nulla non enim mattis, a sagittis sapien rutrum. Duis convallis, sapien vel vulputate porta, augue velit convallis arcu, sit amet commodo neque magna et enim. Nulla sed consequat lorem. Fusce aliquet molestie metus a condimentum. Phasellus posuere lacinia dolor nec ultricies. Quisque ut erat a tellus mattis ultricies. Fusce euismod odio vitae velit fringilla suscipit. Proin sed dolor lorem. Etiam elementum lobortis augue, eget convallis nisl.
+							</p>
+							<p>
+							Suspendisse a leo congue, iaculis augue ac, mollis ipsum. Duis a metus tristique, euismod leo id, dapibus enim. Pellentesque iaculis turpis eu scelerisque dignissim. Mauris ut orci vel lacus suscipit iaculis. Ut in enim eu tellus semper consectetur. Donec elit est, blandit eget nisi sit amet, dignissim viverra est. Phasellus feugiat nec nisi sit amet imperdiet. Curabitur iaculis, tellus ut euismod scelerisque, lorem magna blandit ipsum, ut vulputate turpis augue eu ex.
+							</p>
+							<p>
+							Pellentesque vehicula neque nunc, eu dapibus dui fermentum at. Donec imperdiet pellentesque leo, et auctor ex bibendum quis. Fusce sed accumsan arcu. Phasellus gravida consequat finibus. Phasellus sit amet sem ut enim tristique molestie a ut libero. Aliquam ullamcorper tincidunt diam, nec vestibulum lorem volutpat eget. Nullam malesuada felis ac nulla fermentum, vitae sodales arcu convallis. Nulla lorem magna, auctor ut velit in, scelerisque malesuada libero. Phasellus in nisi euismod, pretium est id, mattis velit. Ut aliquet tortor dolor, vitae porttitor nibh placerat et. Proin vel placerat enim, quis luctus ante. Nunc dictum consectetur dapibus. Nunc volutpat, neque sit amet volutpat viverra, ligula diam faucibus mi, a facilisis justo dui sed lectus.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+	
+
+
+	<div class="title" id="doe_dan" style="position:fixed; bottom:0;">
+		<h2>...DOE DAN.</h2>
 	</div>
 
 	
+	
+
 </body>
 </html>
