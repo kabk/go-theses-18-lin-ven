@@ -11,7 +11,19 @@
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 
 	<script type="text/javascript">
+		window.onload = function( ) { };
 
+		function toggleSubs( ) {
+			var menuitem = $( this );
+			var submenu = menuitem.find( '+ul' );
+			submenu.slideToggle( );
+		}
+
+		function initPage( ) {
+			$( '#menu h2' ).click( toggleSubs );
+		}
+
+		$( document ).ready( initPage );
 	</script>
 	
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -32,7 +44,20 @@
 		
 
 			<div class="panel-label">
-				<h2>Theory</h2>
+				<!-- <h2>Theory</h2> -->
+				<div id="menu">
+					<h2 class="work">Theory</h2>
+					<ul class="submenu">
+						<li>What makes a thought transform into an action?</li>
+						<li>Action before thought (to survive)</li>
+						<li>The practice of visualising ideas</li>
+						<li>Relation between creativity and intellect</li>
+						<li>Fiction v.s. Reality</li>
+						<li>Fluid media</li>
+						
+					</ul>
+				
+				</div>
 			</div>
 
 			<div class="panel-scrolling-container">
@@ -90,7 +115,18 @@
 		<div class="panel-container" style="font-color:black;">
 
 			<div class="panel-label">
-				<h2>Case studies</h2>
+				<div id="menu">
+					<h2 class="work">Case Studies</h2>
+					<ul class="submenu">
+						<li>Sarah van Sonsbeeck v.s. We Are Here FC</li>
+						<li>We Are Public v.s. Poster Almanak</li>
+						<li>Stichting Buurtbeheer en –ontwikkeling Zeeheldenkwartier</li>
+						<li>SIRE v.s. SIRE-EUS?!</li>
+						<li>'Zwarte Piet is Racisme'</li>
+						
+					</ul>
+				
+				</div>
 			</div>
 
 			<div class="panel-scrolling-container" >

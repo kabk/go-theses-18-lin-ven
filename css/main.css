@@ -8,7 +8,7 @@
 
 body {
 /*    background: linear-gradient(to right, grey, black);*/
-    background: grey;
+    background: white;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -23,13 +23,14 @@ body {
 
 
 p,h1,h2,h3,li,tr{
-    color: white;
+    color: black;
     font-family: "Verdana";
     font-weight: "light";
     font-size: 16px;
 }
 
 h1 {
+    color:black;
     width: 100vh;
     position:fixed;
     bottom: -15pt; left: 5%;
@@ -46,6 +47,9 @@ h1 {
 
 h2 {
     font-size: 2vw;
+        height:100%;
+    margin-top:10vh;
+    margin-bottom: 5vh;
 }
 
 h3 {
@@ -72,50 +76,25 @@ th {
     text-align: left;
 }
 
-/* videos and images*/
 
 
 
-/* Home */
-
-.index h2{
-    margin-top:20vh;
-    margin-bottom: 40vh;
+#menu ul { 
+    display: none; 
 }
-
-.title{
-    width:100vw;
-}
-
-.title h2{
-    font-size:10vh;
-    text-align:center;
-}
-
-
-
-/*a, .work {
-    z-index: 999;
-    color: black;
-    cursor: pointer;
-    margin-bottom:5px;
-    text-decoration: none;
-}*/
-
 
 .submenu, .images a:hover{
-    color: #1c4e42;
-    cursor: pointer;
+    color: red;
     margin-bottom:5px;
 }
 
 .submenu {
-    color: #1c4e42;
-    margin-bottom:5px;
+  width:30vw;
 }
 
 .submenu li{
-    font-size: 30px;
+    font-size: 1.3vw;
+    margin-bottom:20px;
     color:blue;
 }
 
@@ -132,18 +111,6 @@ th {
 .image_title_index{
     width:120%;
     margin-left:12vw;
-}
-
-.footer p{
-    margin-top: 10px;
-    font-size: 10px;
-    font-style: italic;
-}
-
-
-
-.contact2{
-    display:none;
 }
 
 
@@ -166,9 +133,9 @@ th {
 
 .panel-label {
     float: left;
-    height: 200px;
+/*    height: 100px;*/
     margin-top: -20px;
-    position: relative;
+    position: fixed
     width: 100%;
 /*    transform: rotate(7deg);*/
 }
@@ -176,13 +143,13 @@ th {
 
 
 .panel-scrolling-container {
-    background-color: grey;
+    background-color: white;
     padding-left: 2vw;
     float: left;
     height: 80vh;
     width: 95%;
     position:relative;
-    resize: both;
+    resize: horizontal;
     overflow: auto;
 }
 
@@ -236,4 +203,8 @@ container:after {
     margin-left: auto;
     margin-right: auto; 
 }  
+
+
+/*pop - up*/
+
 
