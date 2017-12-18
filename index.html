@@ -9,42 +9,9 @@
 	<meta property="og:image" content="still.jpg" />
 	<meta charset="utf8"/>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+
 	<script type="text/javascript">
-		window.onload = function( ) { };
 
-		function toggleSubs( ) {
-			var menuitem = $( this );
-			var submenu = menuitem.find( '+ul' );
-			submenu.slideToggle( );
-		}
-
-		function doedanDown() {
-			var max = $( window ).height( );//800;
-			var distanceFromTop = $( window ).scrollTop();
-			var doedan = $('#doe_dan');
-
-
-			if ( distanceFromTop < max ) {
-				doedan.css( 'bottom', -distanceFromTop / 2 );
-			console.log( distanceFromTop  + ' ' + max );
-			} else {
-				doedan.css( 'bottom', -max / 2 );
-				//ven.css( 'bottom', -distanceFromTop / 2 );
-
-			}
-		}
-
-		function initPage( ) {
-			$( '#menu h3' ).click( toggleSubs );
-
-			$( document ).scroll( doedanDown );
-			doedanDown( );
-
-			$( document ).scroll( linDown );
-			linDown( );
-		}
-
-		$( document ).ready( initPage );
 	</script>
 	
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -54,50 +21,29 @@
 
 <body class="index">
 
-	<div id="down">
-		<h3 style="margin-top:2vh; text-align:center">Thesis</h3>
-		<h3 style="margin-top:2vh; text-align:center">Lin Ven</h3>
-
-	</div>
-
-	<div class="title" id="goed_idee">
-		<h2>GOED IDEE...</h2>
-	</div>
-
 
 	<div id="wrapper_intro">
-		<div id="menu">
-			<h3 class="work">Chapters</h3>
-				<ul class="submenu">
-					<li><a href="leftright.html">1</a></li>
-					<li><a href="fypw.html">2</a></li>
-					<li><a href="dart.html">3</a></li>
-					<li><a href="dart.html">4</a></li>
-					<li><a href="dart.html">5</a></li>
-				</ul>
-		</div>
-
-<!-- 	<div id="introduction">
-		<div class= "images"><h3 style=" bottom:0; margin-left:15%; width:80%;">A case for applied graphic design</h3>
-		</div>
-
-			<h2 style=" bottom:0; margin-left:15%; width:80%;">How can you generate action with your design skills?</h2>
-
-	</div> -->
+		
+		<h1>A case for applied graphic design</h1>
 		
 	<div class="panels">
 		<div class="panel-container">
 
-
+		
 
 			<div class="panel-label">
 				<h2>Theory</h2>
 			</div>
 
-			<div class="panel-scrolling-container" style="background: rgba(0,0,0, .2);">
+			<div class="panel-scrolling-container">
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
 						<div class="preview-item">
+							
+						
+
+
+
 							<p>While watching the movie Waking Life I came across a scene that inspired me to write this thesis. In this specific scene you see a group of young guys wandering around a city. They have a long talk about very complicated and substantial matter. It is hard to follow what they are actually talking about and it gives the viewer the feeling they are highly intellectual and very well informed about complicated matter. All of a sudden an old man attracts their attention. The man is sitting in a 3-meter high pole. The guys look up and ask the man how and why he ended up there. The man answers he is not exactly sure how he ended up on this pole. There is a moment of silence after which the guys ask the man if they could help him getting down again. The man looks confused but answers that he’s actually doing fine high up in the pole. The guys don’t understand the man’s choice but decide to continue walking. The following monologue follows:
 							</p>
 							<h3>“No worse than us. He is all action, no theory. We are al theory and no action.”
@@ -141,14 +87,13 @@
 		</div>
 
 
-
-		<div class="panel-container">
+		<div class="panel-container" style="font-color:black;">
 
 			<div class="panel-label">
-				<h2>Practice</h2>
+				<h2>Case studies</h2>
 			</div>
 
-			<div class="panel-scrolling-container" style="background: rgba(255,255,255,.2)" >
+			<div class="panel-scrolling-container" >
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
 						<div class="preview-item">
@@ -180,10 +125,10 @@
 	
 
 
-	<div class="title" id="doe_dan" style="position:fixed; bottom:0;">
+	<!-- <div class="title" id="doe_dan" style="position:fixed; bottom:0;">
 		<h2>...DOE DAN.</h2>
 	</div>
-
+ -->
 	
 	
 
