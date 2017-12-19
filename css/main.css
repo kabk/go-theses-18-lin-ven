@@ -7,13 +7,11 @@
 }
 
 body {
-/*    background: linear-gradient(to right, grey, black);*/
     background: white;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
@@ -22,11 +20,17 @@ body {
 
 
 
-p,h1,h2,h3,li,tr{
-    color: black;
-    font-family: "Verdana";
-    font-weight: "light";
+#theory p,h1,h2,h3,li,tr{
+    color: red;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 20px;
+}
+
+#casestudies p,h1,h2,h3,li,tr{
+    color: green;
     font-size: 16px;
+    font-family: "Verdana";
+    font-weight:"light";
 }
 
 h1 {

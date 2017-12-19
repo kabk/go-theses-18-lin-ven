@@ -20,7 +20,7 @@
 		}
 
 		function initPage( ) {
-			$( '#menu h2' ).hover( toggleSubs );
+			$( '#menu h2' ).click( toggleSubs );
 		}
 
 		$( document ).ready( initPage );
@@ -44,7 +44,7 @@
 		
 
 			<div class="panel-label">
-				<!-- <h2>Theory</h2> -->
+
 				<div id="menu">
 					<h2 class="work">Theory</h2>
 					<ul class="submenu">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 
-			<div class="panel-scrolling-container">
+			<div class="panel-scrolling-container" id="theory">
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
 						<div class="preview-item">
@@ -112,7 +112,7 @@
 		</div>
 
 
-		<div class="panel-container" style="font-color:black;">
+		<div class="panel-container">
 
 			<div class="panel-label">
 				<div id="menu">
@@ -129,7 +129,7 @@
 				</div>
 			</div>
 
-			<div class="panel-scrolling-container" >
+			<div class="panel-scrolling-container" id="casestudies" >
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
 						<div class="preview-item">
