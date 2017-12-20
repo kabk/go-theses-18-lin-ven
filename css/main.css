@@ -21,13 +21,13 @@ body {
 
 
 #theory p,h1,h2,h3,li,tr{
-    color: red;
+  /*  color: red;*/
     font-family: "Times New Roman", Georgia, Serif;
     font-size: 20px;
 }
 
 #casestudies p,h1,h2,h3,li,tr{
-    color: green;
+/*    color: green;*/
     font-size: 16px;
     font-family: "Verdana";
     font-weight:"light";
