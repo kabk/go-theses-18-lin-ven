@@ -4,6 +4,9 @@
     padding: 0;
     border: 0;
     outline: 0;
+   font-family: "Verdana";
+    font-weight:"light";
+    font-size: 16px;
 }
 
 body {
@@ -22,15 +25,13 @@ body {
 
 #theory p,h1,h2,h3,li,tr{
   /*  color: red;*/
-    font-family: "Times New Roman", Georgia, Serif;
-    font-size: 20px;
+/*    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 20px;*/
 }
 
 #casestudies p,h1,h2,h3,li,tr{
 /*    color: green;*/
-    font-size: 16px;
-    font-family: "Verdana";
-    font-weight:"light";
+    
 }
 
 h1 {
@@ -62,8 +63,13 @@ h3 {
     margin: 1em;
 }
 
+h4{
+    margin-bottom: 10px;
+}
+
 p {
-    text-align: justify;
+    text-align: left;
+    margin-bottom:12px;
 }
 
 ul { 
@@ -76,11 +82,25 @@ li {
     font-size: 12px;   
 }
 
+table{
+    margin-bottom: 20px;
+}
+
 th {
     text-align: left;
 }
 
+img {
+  
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .4s ease-in-out;  
+    }
 
+    img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    }
 
 
 #menu ul { 
@@ -117,6 +137,19 @@ th {
     margin-left:12vw;
 }
 
+.abstract{
+    padding:20px;
+    margin-bottom:10vh;
+    background-color: rgba(0,0,0,0.1);
+}
+.abstract p{
+    font-style:italic;
+}
+
+.abstract h2{
+/*    color:blue;*/
+    margin-top:5vh;
+}
 
 
 /*eflux*/
