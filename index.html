@@ -9,7 +9,9 @@
 	<meta property="og:image" content="still.jpg" />
 	<meta charset="utf8"/>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/Split.js"></script>
 
+<!-- submenu -->
 	<script type="text/javascript">
 		window.onload = function( ) { };
 
@@ -25,6 +27,14 @@
 
 		$( document ).ready( initPage );
 	</script>
+
+	<script>
+	Split(['#theory', '#action'], {
+    sizes: [25, 75],
+    minSize: 200
+	});</script>
+
+	 <script src="https://cdn.rawgit.com/lingtalfi/simpledrag/master/simpledrag.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	
@@ -39,7 +49,7 @@
 		<h1>A case for applied graphic design</h1>
 		
 	<div class="panels">
-		<div class="panel-container" id="theory">
+		<div class="panel-container" class="left-pane" id="theory">
 
 		
 
@@ -63,134 +73,134 @@
 			<div class="panel-scrolling-container">
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
-						<div class="preview-item">
+						
 							
-							<div class="abstract">
-							
-								<p style="margin-bottom:0">I research the way graphic design is applied in practice. During my study I learn to work with big topics that are going beyond the walls of the academy. This leads often to artistic concepts that are fictive and hypothetical. But no matter what, it almost never comes to a real design (strategy) positioned in our reality. I have the desire to apply my designs in the real world and see if my ideas actually work.</p>
+						<div class="abstract">
+						
+							<p style="margin-bottom:0">I research the way graphic design is applied in practice. During my study I learn to work with big topics that are going beyond the walls of the academy. This leads often to artistic concepts that are fictive and hypothetical. But no matter what, it almost never comes to a real design (strategy) positioned in our reality. I have the desire to apply my designs in the real world and see if my ideas actually work.</p>
 
-								<h2>How can I generate a positive effect in the real world with my design skills? </h2>
+							<h2>How can I generate a positive effect in the real world with my design skills? </h2>
 
-								<p>I tried to answer this question by doing literature research, I interviewed people and tried to understand the subject by doing  case study analyses.</p>
+							<p>I tried to answer this question by doing literature research, I interviewed people and tried to understand the subject by doing  case study analyses.</p>
 
-								<p>I think that design can have more impact in the real world. To have an impact, I think we should put our design ideas out there, in the real world, and see what happens. </p>
-
-							</div>
-
-							<p>While watching the movie Waking Life I came across a scene that inspired me to write this thesis. In this specific scene you see a group of young guys wandering around a city. They have a long talk about very complicated and substantial matter. It is hard to follow what they are actually talking about and it gives the viewer the feeling they are highly intellectual and very well informed about complicated matter. All of a sudden an old man attracts their attention. The man is sitting in a 3-meter high pole. The guys look up and ask the man how and why he ended up there. The man answers he is not exactly sure how he ended up on this pole. There is a moment of silence after which the guys ask the man if they could help him getting down again. The man looks confused but answers that he’s actually doing fine high up in the pole. The guys don’t understand the man’s choice but decide to continue walking. The following monologue follows:
-							</p>
-							<h3>“No worse than us. He is all action, no theory. We are al theory and no action.”
-							</h3>
-
-							<img src="theory/theory-action-1.png" alt="theory">
-
-							<img src="theory/theory-action-2.png" alt="theory">
-
-							<img src="theory/theory-action-3.png" alt="theory">
-
-							<table style="width:100%">
-								<tr>
-									<th>Theory</th>
-									<th>Action</th> 
-								</tr>
-
-								<tr>
-									<td>Ratio</td>
-									<td>Reaction</td>
-								</tr>
-
-								<tr>
-									<td>Immaterial</td>
-									<td>Provocation</td>
-								</tr>
-
-								<tr>
-									<td>Academic</td>
-									<td>Physics (Newton)</td>
-								</tr>
-
-								
-								<tr>
-									<td>Repeatable experiments</td>
-									<td>Physical (Sports)</td>
-								</tr>
-
-								<tr>
-									<td>Falsifiable theories</td>
-									<td>Performative</td>
-								</tr>
-
-								<tr>
-									<td>Contemplation</td>
-									<td>Activism</td>
-								</tr>
-
-								<tr>
-									<td>Formulation</td>
-									<td>Impulse</td>
-								</tr>
-
-								<tr>
-									<td>Academic</td>
-									<td>Physics (Newton)</td>
-								</tr>
-
-								<tr>
-									<td>Language barrier</td>
-									<td>Intuition</td>
-								</tr>
-
-								<tr>
-									<td>Hypothetical approach</td>
-									<td>Personal experience</td>
-								</tr>
-
-								<tr>
-									<td>Assumptions</td>
-									<td>Emotions</td>
-								</tr>
-
-							</table>
-
-							<p>
-							When talking about the relationship between thinking and doing, I would like to examine the process within our own bodies. The following question can be asked:
-							</p>
-
-							<h3>What makes a thought transform into an action?</h3>
-
-							<p>As I’m typing this text I don’t experience the physical chain of actions needed to make my fingers move. It feels automated. 
-							Something that’s not concrete (the thoughts about the text I want to write down) is translated in to a concrete action (movement of my fingers on the keyboard). What happens between those two events?</p>
-
-							<p>Deepak Chopra (1947), a doctor and expert in the field of mind-body healing, talks about this mysterious gap between a thought and an action in his book Quantum Healing. Chopra talks about the discovery of neuropeptides. Neuropeptides are small protein-like molecules used by neurons to communicate with each other.  Chopra visualizes the mystery between a thought and an action in the following diagram:</p>
-
-							<img src="theory/chopra.png" alt="">
-							<p>
-							point A represents a thought, all the other letters represent physical actions that follow from point A. Point A is for example the sentence I construct in my mind after which neurons are activated to make my fingers move in a specific way across the keyboard to translate my thought to letters appearing on my computer screen. As Chopra explains: 
-							</p>
-
-							<div class="quote">
-								“All the physical changes that take place in the body can be connected in a logical chain of cause and effect, except for the space after A. This is the point where the transformation from thought to matter first occurs and it must occur, or the rest of the events will not happen.”
-							</div>
-
-							<p>Chopra does not give the answer to the question what makes a thought translate into an action but he emphasizes the importance of the transformation of the immaterial thought to the material action. 
-							</p>
-
-							<p>Where Chopra focuses on the mysterious connection between mind and body philosopher Réne Descartes (1596-1650) states that mind and body are separable. The mind can exist outside of the body, and the body is an entity that cannot think. Descartes is famous for his quote “Cogito ergo sum” which means “I think, therefore I am”. This statement is known as Cartesian dualism. Descartes sees the mind as consciousness and the physical brain the source of intelligence.
-							</p>
-
-							<div class="quote">
-							“Although I have a body that is joined very closely to me, since I have on the one hand a clear and distinct idea of myself insofar as I am a thinking, non-extended thing and, on the other hand, I have a distinct idea of the body insofar as it is merely and extended, non-thinking thing, it is certain that I (that is, the mind) am really distinct from my body and that I can exist without it.”
-							</div>
+							<p>I think that design can have more impact in the real world. To have an impact, I think we should put our design ideas out there, in the real world, and see what happens. </p>
 
 						</div>
+
+						<p>While watching the movie Waking Life I came across a scene that inspired me to write this thesis. In this specific scene you see a group of young guys wandering around a city. They have a long talk about very complicated and substantial matter. It is hard to follow what they are actually talking about and it gives the viewer the feeling they are highly intellectual and very well informed about complicated matter. All of a sudden an old man attracts their attention. The man is sitting in a 3-meter high pole. The guys look up and ask the man how and why he ended up there. The man answers he is not exactly sure how he ended up on this pole. There is a moment of silence after which the guys ask the man if they could help him getting down again. The man looks confused but answers that he’s actually doing fine high up in the pole. The guys don’t understand the man’s choice but decide to continue walking. The following monologue follows:
+						</p>
+						<h3>“No worse than us. He is all action, no theory. We are al theory and no action.”
+						</h3>
+
+						<img src="theory/theory-action-1.png" alt="theory">
+
+						<img src="theory/theory-action-2.png" alt="theory">
+
+						<img src="theory/theory-action-3.png" alt="theory">
+
+						<table style="width:100%">
+							<tr>
+								<th>Theory</th>
+								<th>Action</th> 
+							</tr>
+
+							<tr>
+								<td>Ratio</td>
+								<td>Reaction</td>
+							</tr>
+
+							<tr>
+								<td>Immaterial</td>
+								<td>Provocation</td>
+							</tr>
+
+							<tr>
+								<td>Academic</td>
+								<td>Physics (Newton)</td>
+							</tr>
+
+							
+							<tr>
+								<td>Repeatable experiments</td>
+								<td>Physical (Sports)</td>
+							</tr>
+
+							<tr>
+								<td>Falsifiable theories</td>
+								<td>Performative</td>
+							</tr>
+
+							<tr>
+								<td>Contemplation</td>
+								<td>Activism</td>
+							</tr>
+
+							<tr>
+								<td>Formulation</td>
+								<td>Impulse</td>
+							</tr>
+
+							<tr>
+								<td>Academic</td>
+								<td>Physics (Newton)</td>
+							</tr>
+
+							<tr>
+								<td>Language barrier</td>
+								<td>Intuition</td>
+							</tr>
+
+							<tr>
+								<td>Hypothetical approach</td>
+								<td>Personal experience</td>
+							</tr>
+
+							<tr>
+								<td>Assumptions</td>
+								<td>Emotions</td>
+							</tr>
+
+						</table>
+
+						<p>
+						When talking about the relationship between thinking and doing, I would like to examine the process within our own bodies. The following question can be asked:
+						</p>
+
+						<h3>What makes a thought transform into an action?</h3>
+
+						<p>As I’m typing this text I don’t experience the physical chain of actions needed to make my fingers move. It feels automated. 
+						Something that’s not concrete (the thoughts about the text I want to write down) is translated in to a concrete action (movement of my fingers on the keyboard). What happens between those two events?</p>
+
+						<p>Deepak Chopra (1947), a doctor and expert in the field of mind-body healing, talks about this mysterious gap between a thought and an action in his book Quantum Healing. Chopra talks about the discovery of neuropeptides. Neuropeptides are small protein-like molecules used by neurons to communicate with each other.  Chopra visualizes the mystery between a thought and an action in the following diagram:</p>
+
+						<img src="theory/chopra.png" alt="">
+						<p>
+						point A represents a thought, all the other letters represent physical actions that follow from point A. Point A is for example the sentence I construct in my mind after which neurons are activated to make my fingers move in a specific way across the keyboard to translate my thought to letters appearing on my computer screen. As Chopra explains: 
+						</p>
+
+						<div class="quote">
+							“All the physical changes that take place in the body can be connected in a logical chain of cause and effect, except for the space after A. This is the point where the transformation from thought to matter first occurs and it must occur, or the rest of the events will not happen.”
+						</div>
+
+						<p>Chopra does not give the answer to the question what makes a thought translate into an action but he emphasizes the importance of the transformation of the immaterial thought to the material action. 
+						</p>
+
+						<p>Where Chopra focuses on the mysterious connection between mind and body philosopher Réne Descartes (1596-1650) states that mind and body are separable. The mind can exist outside of the body, and the body is an entity that cannot think. Descartes is famous for his quote “Cogito ergo sum” which means “I think, therefore I am”. This statement is known as Cartesian dualism. Descartes sees the mind as consciousness and the physical brain the source of intelligence.
+						</p>
+
+						<div class="quote">
+						“Although I have a body that is joined very closely to me, since I have on the one hand a clear and distinct idea of myself insofar as I am a thinking, non-extended thing and, on the other hand, I have a distinct idea of the body insofar as it is merely and extended, non-thinking thing, it is certain that I (that is, the mind) am really distinct from my body and that I can exist without it.”
+						</div>
+
 					</div>
 				</div>
 			</div>
 
 		</div>
 
+<div class="panes-separator" id="panes-separator">seperator</div>
 
-		<div class="panel-container" id="casestudies">
+		<div class="panel-container" class="left-pane" id="casestudies">
 
 			<div class="panel-label">
 				<div id="menu">
@@ -210,7 +220,7 @@
 			<div class="panel-scrolling-container"  >
 				<div class="panel-scrolling-area">
 					<div class="panel-items">
-						<div class="preview-item">
+
 							<h3>Case #1</h3>
 							<h4>Stichting Buurtbeheer en –ontwikkeling Zeeheldenkwartier</h4>
 								<p>
@@ -249,7 +259,7 @@
 							<div class="quote">
 							“Boys and girls are equal, but not the same. We, Dutch educators, sometimes lose sight of the fact that boys develop in a different way and learn differently than girls. In general, educators expect children to behave calmly, listen carefully and sit still. While boys learn more by discovering, experimenting, taking risks, doing. Educators seem to appreciate less ‘boys’ behavior in recent years. Restraining boys inhibits their development.”
 							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -259,13 +269,50 @@
 
 	</div>
 	
+<script>
 
 
-	<!-- <div class="title" id="doe_dan" style="position:fixed; bottom:0;">
-		<h2>...DOE DAN.</h2>
-	</div>
- -->
-	
+    var leftPane = document.getElementById('theory');
+    var rightPane = document.getElementById('casestudies');
+    var paneSep = document.getElementById('panes-separator');
+
+    // The script below constrains the target to move horizontally between a left and a right virtual boundaries.
+    // - the left limit is positioned at 10% of the screen width
+    // - the right limit is positioned at 90% of the screen width
+    var leftLimit = 10;
+    var rightLimit = 90;
+
+
+    paneSep.sdrag(function (el, pageX, startX, pageY, startY, fix) {
+
+        fix.skipX = true;
+
+        if (pageX < window.innerWidth * leftLimit / 100) {
+            pageX = window.innerWidth * leftLimit / 100;
+            fix.pageX = pageX;
+        }
+        if (pageX > window.innerWidth * rightLimit / 100) {
+            pageX = window.innerWidth * rightLimit / 100;
+            fix.pageX = pageX;
+        }
+
+        var cur = pageX / window.innerWidth * 100;
+        if (cur < 0) {
+            cur = 0;
+        }
+        if (cur > window.innerWidth) {
+            cur = window.innerWidth;
+        }
+
+
+        var right = (100-cur-2);
+        leftPane.style.width = cur + '%';
+        rightPane.style.width = right + '%';
+
+    }, null, 'horizontal');
+
+
+</script>
 	
 
 </body>
