@@ -8,6 +8,7 @@
 }
 
 body {
+
     background: white;
     margin: 0;
     padding: 0;
@@ -36,28 +37,12 @@ font-size:20px;
     
 }
 
-h1 {
-        
-/*    color:black;
-    width: 100vh;
-    position:fixed;
-    bottom: -15pt; left: 5%;
-    font-size: 2.5vw;
-    line-height: 15pt;
-    text-align: right;
-    padding-right: 15vh;
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;*/
-}
 
 h2 {
     /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
-    font-size: 2vw;
+    font-size: 40px;
     height:100%;
-    margin-top:10vh;
+    margin-top:30px;
     margin-bottom: 5vh;
 }
 
@@ -108,7 +93,8 @@ th {
     text-align: left;
 }
 
-.quote  {
+
+.quote {
     font-style:italic;
 }
 
@@ -128,11 +114,15 @@ img:hover {
     -webkit-filter: grayscale(0);
 }
 
+/*MENU*/
 
 #menu ul { 
     display: none; 
 }
 
+#menu h2{
+    text-align:center;
+}
 #menu h2:hover{
     color:grey;
     cursor: pointer;
@@ -154,35 +144,21 @@ color:grey;
     
 }
 
+/*CONTENT*/
+
 #wrapper_intro {
     width: 90vw;
     margin-top: 0;
-    /*otherwise 100vh at the bottom too*/
     margin-left: auto;
     margin-right: auto;
 } 
 
 
-
-.image_title_index{
-    width:120%;
-    margin-left:12vw;
-}
-
 .abstract{
     padding:20px;
-    margin-bottom:10vh;
-  /*  background-color: rgba(255,153,153,0.3);*/
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .4s ease-in-out; 
+    border:solid 1px; 
+    margin-bottom: 2vh;
 }
-
-.abstract:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-}
-
 
 .abstract h2{
     margin-top:5vh;
@@ -192,24 +168,24 @@ color:grey;
 
 .panels {
     width:90vw;
+    height:95vh;
     margin:0;
     display: flex;
     overflow: hidden;
-
 }
 
 .panel-container {
     zoom: 1;
     float: left;
-/*    height: 100%;*/
+        height: 100%;
     width:50vw;
 
 }
 
 .panel-label {
     float: left;
-    margin-top: -20px;
     width: 100%;
+/*  */
 }
 
 .panel-scrolling-container {
@@ -219,7 +195,8 @@ color:grey;
     height: 80vh;
     width: 100%;
     position:relative;
-    overflow: auto;
+/*     overflow: auto;*/
+    
 }
 
 .panel-scrolling-container img, video {
@@ -233,6 +210,7 @@ color:grey;
 
 .panel-scrolling-area {
     height: 100%;
+    overflow:auto;
 }
 
 
@@ -240,6 +218,7 @@ color:grey;
 /*    position: relative;*/
     widows: 60%;
     width: calc(100% - 60px);
+     overflow-y: auto;
 }
 
 
@@ -256,9 +235,9 @@ color:grey;
 
 .panes-separator h1{
     width: 100vh;
-    position:fixed;
-    bottom: -10vh; 
-    font-size: 2.5vw;
+    position:relative;
+    bottom: 5vh; 
+    font-size: 5vh;
     line-height: 15pt;
     text-align: right;
     padding-right: 15vh;
@@ -268,6 +247,9 @@ color:grey;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+
 
 .right-pane {
     width:40vw;
