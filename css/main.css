@@ -17,26 +17,26 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
+    font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight:"light";
 }
 
 
 
 
-#theory p,h1,h2,h3,li,th, td, .quote{
+#theory p, #theory h1,#theory h2,#theory h3, #theory li,#theory th,#theory td, #theory .quote{
 /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
 font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;;
-font-size:20px;
-/*  color:red;*/
 }
 
-#casestudies p,h1,h2,h3,li,th, td, div, .quote{
-   font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight:"light";
-        font-size: 16px;
-/*    color:green;*/
-    
+#casestudies p,#casestudies h1,#casestudies h2,#casestudies h3,#casestudies li,#casestudies th,#casestudies td,#casestudies div, .quote{
+   /*font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;*/
+    font-weight:"light";    
 }
 
+#panes-separator h1, #panes-separator h2{
+    color:blue;
+}
 
 h2 {
     /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
@@ -236,7 +236,7 @@ color:grey;
 .panes-separator h1{
     width: 100vh;
     position:relative;
-    bottom: 5vh; 
+    bottom: 8.8vh; 
     font-size: 5vh;
     line-height: 15pt;
     text-align: right;
