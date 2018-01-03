@@ -19,6 +19,7 @@ body {
     font-smoothing: antialiased;
     font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight:"light";
+    font-size:18px;
 }
 
 
@@ -33,10 +34,10 @@ font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;;
    /*font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;*/
     font-weight:"light";    
 }
-
-#panes-separator h1, #panes-separator h2{
-    color:blue;
-}
+/*
+#panes-separator h1{
+    color:yellow;
+}*/
 
 h2 {
     /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
@@ -44,22 +45,35 @@ h2 {
     height:100%;
     margin-top:30px;
     margin-bottom: 5vh;
+    text-align: center;
 }
 
-h3 {
+.quote {
    /* font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
     font-size:1.8vw;
+/*    font-weight: bold;*/
     text-align: left;
     margin: 1em;
 }
 
+/*naam casestudies*/
 h4{
-    margin-bottom: 10px;
+    margin-bottom: 5vh;
+    text-align:center;
 }
 
 p {
-    text-align: left;
     margin-bottom:12px;
+}
+
+#theory p{
+    font-size: 20px;
+    line-height:150%;
+}
+
+#casestudies p{
+    font-size:17px;
+    line-height:180%;
 }
 
 a{
@@ -75,27 +89,32 @@ a:visited{
     text-decoration: none;
 }
 
-ul { 
-    list-style-type: none;
+/*ordered list on line 197 theory*/
+ul,ol { 
+/*    list-style-type: none;*/
+margin-bottom: 5vh;
 }
 
 li {
     padding-left:0;
     margin-top: 10px; 
-    font-size: 12px;   
+/*    font-size: 12px;  */ 
 }
 
 table{
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 }
 
 th {
     text-align: left;
 }
 
-
+.chapter{
+    margin-top:10vh;
+}
 .quote {
     font-style:italic;
+/*    margin-bottom:12px;*/
 }
 
 .quote:hover{
