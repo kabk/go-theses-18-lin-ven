@@ -29,7 +29,7 @@ body {
 
 #theory p, #theory h1,#theory h2,#theory h3, #theory li,#theory th,#theory td, #theory .quote{
 /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
-font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;;
+font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
 }
 
 #casestudies p,#casestudies h1,#casestudies h2,#casestudies h3,#casestudies li,#casestudies th,#casestudies td,#casestudies div, .quote{
@@ -127,6 +127,7 @@ img:hover, video:hover {
 } 
 
 .title{
+    color:red;
     float:left;
     position:absolute;
     text-align: left;
@@ -136,6 +137,7 @@ img:hover, video:hover {
 }
 
 .credits{
+    color:red;
     width:85vw;
     float:right;
     position:absolute;
@@ -148,15 +150,19 @@ img:hover, video:hover {
 
 
 .abstract{
-    padding:20px;
-    border:solid 1px; 
+    padding:30px;
     margin-bottom: 2vh;
+    border-bottom: 4px solid red;
 }
 
 .abstract h2{
     margin-top:5vh;
 }
 
+/*.abstract:hover{
+    color:red;
+    -webkit-transition: all .4s ease-in-out; 
+}*/
 /*eflux*/
 
 .panels {
@@ -172,6 +178,17 @@ img:hover, video:hover {
     float: left;
         height: 100%;
     width:50vw;
+}
+
+.right-pane {
+    width:50vw;
+    flex: auto;
+
+}
+
+.left-pane {
+    width: 50vw;
+
 }
 
 .panel-label {
@@ -247,15 +264,3 @@ img:hover, video:hover {
 }
 
 
-
-
-.right-pane {
-    width:50vw;
-    flex: auto;
-
-}
-
-.left-pane {
-    width: 50vw;
-
-}
