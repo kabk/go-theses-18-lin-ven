@@ -20,6 +20,8 @@ body {
     font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight:"light";
     font-size:18px;
+    overflow:hidden;
+
 }
 
 
@@ -31,16 +33,12 @@ font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;;
 }
 
 #casestudies p,#casestudies h1,#casestudies h2,#casestudies h3,#casestudies li,#casestudies th,#casestudies td,#casestudies div, .quote{
-   /*font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;*/
     font-weight:"light";    
 }
-/*
-#panes-separator h1{
-    color:yellow;
-}*/
 
+
+/*Hoofdstukken*/
 h2 {
-    /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
     font-size: 40px;
     height:100%;
     margin-top:30px;
@@ -48,19 +46,20 @@ h2 {
     text-align: center;
 }
 
-.quote {
-   /* font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
-    font-size:1.8vw;
-/*    font-weight: bold;*/
-    text-align: left;
-    margin: 1em;
-}
 
 /*naam casestudies*/
 h4{
     margin-bottom: 5vh;
     text-align:center;
+    font-size:30px;
 }
+
+.quote {
+    font-size:1.8vw;
+    text-align: left;
+    margin: 1em;
+}
+
 
 p {
     margin-bottom:12px;
@@ -76,29 +75,15 @@ p {
     line-height:180%;
 }
 
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    color:pink;
-}
-
-a:visited{
-    color:black;
-    text-decoration: none;
-}
 
 /*ordered list on line 197 theory*/
 ul,ol { 
-/*    list-style-type: none;*/
-margin-bottom: 5vh;
+    margin-bottom: 5vh;
 }
 
 li {
     padding-left:0;
-    margin-top: 10px; 
-/*    font-size: 12px;  */ 
+    margin-top: 10px;  
 }
 
 table{
@@ -133,35 +118,6 @@ img:hover, video:hover {
     -webkit-filter: grayscale(0);
 }
 
-/*MENU*/
-
-#menu ul { 
-    display: none; 
-}
-
-#menu h2{
-    text-align:center;
-}
-#menu h2:hover{
-    color:grey;
-    cursor: pointer;
-}
-
-.submenu li:hover{
-color:grey;
-    cursor: pointer;
-}
-
-.submenu {
-  width:30vw;
-}
-
-.submenu li{
-    font-style: bold;
-    font-size: 2vw;
-    margin-bottom:20px;
-    
-}
 
 /*CONTENT*/
 
@@ -171,6 +127,15 @@ color:grey;
     margin-left: auto;
     margin-right: auto;
 } 
+
+.title{
+    float:left;
+    position:absolute;
+    text-align: left;
+        margin-top: 30px;
+        margin-left:20px;
+
+}
 
 
 .abstract{
@@ -191,6 +156,7 @@ color:grey;
     margin:0;
     display: flex;
     overflow: hidden;
+
 }
 
 .panel-container {
@@ -198,6 +164,7 @@ color:grey;
     float: left;
         height: 100%;
     width:50vw;
+
 
 }
 
@@ -208,12 +175,12 @@ color:grey;
 }
 
 .panel-scrolling-container {
-    padding-left: 2vw;
+    margin-left: 20px;
     float: left;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     position:relative;
-/*     overflow: auto;*/
+    overflow-y:auto;
     
 }
 
@@ -228,15 +195,15 @@ color:grey;
 
 .panel-scrolling-area {
     height: 100%;
-    overflow:auto;
+   
 }
 
 
 .panel-items {
 /*    position: relative;*/
     widows: 60%;
-    width: calc(100% - 60px);
-     overflow-y: auto;
+    width: calc(100% - 50px);
+ 
 }
 
 
@@ -251,12 +218,12 @@ color:grey;
     cursor: col-resize;
 }
 
-.panes-separator h1{
+.panes-separator h4{
     width: 100vh;
     position:relative;
     bottom: 8.8vh; 
-    font-size: 5vh;
-    line-height: 15pt;
+/*    font-size: 18px;*/
+/*    line-height: 15pt;*/
     text-align: right;
     padding-right: 15vh;
     transform: rotate(-90deg);
@@ -270,12 +237,12 @@ color:grey;
 
 
 .right-pane {
-    width:40vw;
+    width:50vw;
     flex: auto;
 
 }
 
 .left-pane {
-    width: 40vw;
+    width: 50vw;
 
 }
