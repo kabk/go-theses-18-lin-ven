@@ -151,13 +151,21 @@ img:hover, video:hover {
 
 .abstract{
     padding:30px;
-    margin-bottom: 2vh;
+    margin-bottom: 20vh;
     border-bottom: 4px solid red;
 }
 
-.abstract h2{
+.abstract h2, .abstract-2 h2{
     margin-top:5vh;
 }
+
+.abstract-2{
+    padding:30px;
+    margin-bottom: 70vh;
+    border-bottom: 4px solid red;
+}
+
+
 
 /*.abstract:hover{
     color:red;
