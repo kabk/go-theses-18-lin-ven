@@ -8,8 +8,8 @@
 }
 
 body {
-
-    background: white;
+    background-color: white;
+/*  background: rgb(249,244,233);*/
     margin: 0;
     padding: 0;
     width: 100%;
@@ -121,14 +121,14 @@ th {
     cursor:pointer;
 }
 
-img {
+img, video{
   
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .4s ease-in-out;  
 }
 
-img:hover {
+img:hover, video:hover {
     filter: none;
     -webkit-filter: grayscale(0);
 }
@@ -208,7 +208,6 @@ color:grey;
 }
 
 .panel-scrolling-container {
-    background-color: white;
     padding-left: 2vw;
     float: left;
     height: 80vh;
