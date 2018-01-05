@@ -94,9 +94,7 @@ th {
     text-align: left;
 }
 
-.chapter{
-    margin-top:10vh;
-}
+
 .quote {
     font-style:italic;
 /*    margin-bottom:12px;*/
@@ -132,8 +130,19 @@ img:hover, video:hover {
     float:left;
     position:absolute;
     text-align: left;
-        margin-top: 30px;
-        margin-left:20px;
+    margin-top: 30px;
+    margin-left:20px;
+    z-index:-1;
+}
+
+.credits{
+    width:85vw;
+    float:right;
+    position:absolute;
+    text-align: right;
+    margin-top: 30px;
+    margin-left:20px;
+    z-index:-1;
 
 }
 
@@ -156,7 +165,6 @@ img:hover, video:hover {
     margin:0;
     display: flex;
     overflow: hidden;
-
 }
 
 .panel-container {
@@ -164,15 +172,20 @@ img:hover, video:hover {
     float: left;
         height: 100%;
     width:50vw;
-
-
 }
 
 .panel-label {
     float: left;
     width: 100%;
-/*  */
 }
+
+#chapter{
+    background-color: white;
+    width:20vw;
+    margin:0 auto;
+
+}
+
 
 .panel-scrolling-container {
     margin-left: 20px;
