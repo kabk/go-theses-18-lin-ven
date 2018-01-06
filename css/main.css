@@ -21,6 +21,10 @@ body {
     font-weight:"light";
     font-size:18px;
     overflow:hidden;
+/*niks kan geselecteerd worden*/
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 
 }
 
@@ -226,7 +230,7 @@ img:hover, video:hover {
 .panel-scrolling-container {
     margin-left: 20px;
     float: left;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     position:relative;
     overflow-y:auto;
@@ -252,7 +256,7 @@ img:hover, video:hover {
 /*    position: relative;*/
     widows: 60%;
     width: calc(100% - 50px);
- 
+    margin-bottom: 400px;
 }
 
 
@@ -278,6 +282,9 @@ img:hover, video:hover {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+     -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 .panes-separator h4:hover{
