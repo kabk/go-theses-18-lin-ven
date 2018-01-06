@@ -126,18 +126,17 @@ img:hover, video:hover {
     margin-right: auto;
 } 
 
-.title{
-    color:red;
-    float:left;
-    position:absolute;
-    text-align: left;
-    margin-top: 30px;
-    margin-left:20px;
-    z-index:-1;
+.title h2{
+    text-align:left; 
+    font-size:70px; 
+    padding-left:60px;
+    color:white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: red;
 }
 
 .credits{
-    color:red;
+/*    color:red;*/
     width:85vw;
     float:right;
     position:absolute;
@@ -148,29 +147,38 @@ img:hover, video:hover {
 
 }
 
-
 .abstract{
-    padding:30px;
     margin-bottom: 20vh;
-    border-bottom: 4px solid red;
+}
+
+.abstract-2{
+    margin-bottom: 60vh;
+}
+
+.abstract p{
+    padding-left: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid red;
 }
 
 .abstract h2, .abstract-2 h2{
     margin-top:5vh;
 }
 
-.abstract-2{
-    padding:30px;
-    margin-bottom: 70vh;
-    border-bottom: 4px solid red;
+.abstract-2 p{
+    border-bottom: 2px solid red;
 }
 
+.abstract h2, .abstract-2 h2{
+    font-size:20vw;
+}
 
 
 /*.abstract:hover{
     color:red;
     -webkit-transition: all .4s ease-in-out; 
 }*/
+
 /*eflux*/
 
 .panels {
@@ -260,10 +268,8 @@ img:hover, video:hover {
     width: 100vh;
     position:relative;
     bottom: 8.8vh; 
-/*    font-size: 18px;*/
-/*    line-height: 15pt;*/
     text-align: right;
-    padding-right: 30vh;
+    padding-right: 15vh;
     transform: rotate(-90deg);
     transform-origin: left top 0;
     -webkit-box-sizing: border-box;
