@@ -105,44 +105,6 @@ th {
 }
 
 
-.circle {
-    position: relative;
-  display: inline-block;
-  margin-left:5px;
-  height: 7px;
-  width: 7px;
-  border: 2px solid red;
-  background-color: white;
-}
-
-.circle:hover{
-    cursor:pointer;
-}
-
-
-.circle .reference{
-    visibility: hidden;
-    width: 200px;
-    font-size: 14px;
-    line-height:140%;
-    background-color: white;
-    color: red;
-    text-align: left;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.circle:hover .reference {
-    visibility: visible;
-    opacity: 1;
-}
-
 a, a:visited{
     color:red;
     text-decoration: none;
@@ -335,3 +297,59 @@ img:hover, video:hover {
     color:red;
      -webkit-transition: all .4s ease-in-out; 
 }
+
+
+
+
+/*sources*/
+
+/*VIERKANTJES*/
+
+.circle {
+  position: relative;
+  display: inline-block;
+  margin-left:-1px;
+  margin-right: 1px;
+  height: 7px;
+  width: 7px;
+  border: 2px solid red;
+  background-color: white;
+}
+
+/*tekst onderlijnd*/
+.reference{
+    position:relative;
+    border-bottom: 2px solid red;
+}
+
+
+.circle:hover, .reference:hover{
+    cursor:pointer;
+}
+
+
+.circle .source, .reference .source{
+    visibility: hidden;
+    width: 200px;
+    font-size: 14px;
+    line-height:140%;
+    background-color: white;
+    color: red;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;    
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.circle:hover .source, .reference:hover .source {
+    visibility: visible;
+    opacity: 1;
+}
+
+
