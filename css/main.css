@@ -104,8 +104,52 @@ th {
 /*    margin-bottom:12px;*/
 }
 
-.quote:hover{
+
+.circle {
+    position: relative;
+  display: inline-block;
+  margin-left:5px;
+  height: 7px;
+  width: 7px;
+  border: 2px solid red;
+  background-color: white;
+}
+
+.circle:hover{
     cursor:pointer;
+}
+
+
+.circle .reference{
+    visibility: hidden;
+    width: 200px;
+    font-size: 14px;
+    line-height:140%;
+    background-color: white;
+    color: red;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.circle:hover .reference {
+    visibility: visible;
+    opacity: 1;
+}
+
+a, a:visited{
+    color:red;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid red;
 }
 
 img, video{
