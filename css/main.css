@@ -31,7 +31,7 @@ body {
 
 
 
-#theory p, #theory h1,#theory h2,#theory h3, #theory li,#theory th,#theory td, #theory .quote{
+#theory p, #theory span, #theory h1,#theory h2,#theory h3, #theory li,#theory th,#theory td, #theory .quote{
 /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
 font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
 }
@@ -59,8 +59,8 @@ h4{
 }
 
 .quote {
-    font-size:1.8vw;
-    text-align: left;
+    font-size: 18px;
+    text-align: center;
     margin: 1em;
 }
 
@@ -68,6 +68,7 @@ h4{
 p {
     margin-bottom:12px;
 }
+
 
 #theory p{
     font-size: 20px;
@@ -158,9 +159,7 @@ img:hover, video:hover {
 
 }
 
-.abstract{
-    margin-bottom: 20vh;
-}
+
 
 .abstract-2{
     margin-bottom: 70vh;
@@ -184,11 +183,11 @@ img:hover, video:hover {
     font-size:20vw;
 }
 
-
-/*.abstract:hover{
+.abstract:hover, .abstract-2:hover, .conclusion:hover{
     color:red;
-    -webkit-transition: all .4s ease-in-out; 
-}*/
+     -webkit-transition: all .4s ease-in-out; 
+}
+
 
 /*eflux*/
 
@@ -327,6 +326,7 @@ img:hover, video:hover {
 .circle:hover, .reference:hover{
     cursor:pointer;
 }
+
 
 
 .circle .source, .reference .source{
