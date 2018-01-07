@@ -275,6 +275,7 @@ img:hover, video:hover {
     height:100vh;
     position: relative;
     cursor: col-resize;
+    z-index:1;
 }
 
 .panes-separator h4{
