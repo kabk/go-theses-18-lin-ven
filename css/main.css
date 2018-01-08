@@ -22,9 +22,9 @@ body {
     font-size:18px;
     overflow:hidden;
 /*niks kan geselecteerd worden*/
-    -moz-user-select: none;
+/*    -moz-user-select: none;
    -khtml-user-select: none;
-   -webkit-user-select: none;
+   -webkit-user-select: none;*/
 
 }
 
