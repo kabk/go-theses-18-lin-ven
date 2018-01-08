@@ -50,6 +50,9 @@ h2 {
     text-align: center;
 }
 
+.title h2{
+    margin-bottom: 20px;
+}
 
 /*naam casestudies*/
 h4{
@@ -149,14 +152,21 @@ img:hover, video:hover {
 
 .credits{
 /*    color:red;*/
-    width:85vw;
-    float:right;
+    width:89vw;
+    float:left;
     position:absolute;
     text-align: right;
     margin-top: 30px;
     margin-left:20px;
     z-index:-1;
 
+}
+
+#menu{
+    z-index: 2;
+    background-color: white;
+    width:100%;
+    float:left;
 }
 
 
@@ -200,6 +210,7 @@ img:hover, video:hover {
 }
 
 .panel-container {
+
     zoom: 1;
     float: left;
         height: 100%;
@@ -220,7 +231,7 @@ img:hover, video:hover {
 .panel-label {
     float: left;
     width: 100%;
-    height:80px;
+    height:60px;
         border-bottom: 2px solid red;
 }
 
@@ -238,7 +249,9 @@ img:hover, video:hover {
     height: 80vh;
     width: 100%;
     position:relative;
+    overflow-x:none;
     overflow-y:auto;
+        z-index:0;
     
 }
 
@@ -325,6 +338,7 @@ img:hover, video:hover {
 
 .circle:hover, .reference:hover{
     cursor:pointer;
+
 }
 
 
