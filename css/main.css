@@ -21,17 +21,15 @@ body {
     font-weight:"light";
     font-size:18px;
     overflow:hidden;
-/*niks kan geselecteerd worden*/
-/*    -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;*/
-
 }
 
 
+::selection {
+  color: black;
+  background: rgba(255,0,0,0.2);
+}
 
-
-#theory p, #theory span, #theory h1,#theory h2,#theory h3, #theory li,#theory th,#theory td, #theory .quote{
+#theory p, #theory span, #theory h1,#theory h2,#theory h3, #theory h4, #theory li,#theory th,#theory td, #theory .quote{
 /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
 font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
 }
@@ -54,6 +52,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+h3{
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /*naam casestudies*/
 h4{
     margin-bottom: 5vh;
@@ -62,7 +66,8 @@ h4{
 }
 
 .quote {
-    font-size: 18px;
+/*    font-size: 18px;*/
+    font-style:italic;
     text-align: center;
     margin: 1em;
 }
@@ -102,11 +107,6 @@ th {
     text-align: left;
 }
 
-
-.quote {
-    font-style:italic;
-/*    margin-bottom:12px;*/
-}
 
 
 a, a:visited{
@@ -172,7 +172,7 @@ img:hover, video:hover {
 
 
 .abstract-2{
-    margin-bottom: 70vh;
+    margin-bottom: 60vh;
 }
 
 .abstract p{
@@ -193,10 +193,10 @@ img:hover, video:hover {
     font-size:20vw;
 }
 
-.abstract:hover, .abstract-2:hover, .conclusion:hover{
+/*.abstract:hover, .abstract-2:hover, .conclusion:hover{
     color:red;
      -webkit-transition: all .4s ease-in-out; 
-}
+}*/
 
 
 /*eflux*/
