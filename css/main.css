@@ -118,14 +118,14 @@ a:hover{
     border-bottom: 1px solid red;
 }
 
-img, video{
+img, video, iframe{
   
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .4s ease-in-out;  
 }
 
-img:hover, video:hover {
+img:hover, video:hover, iframe:hover {
     filter: none;
     -webkit-filter: grayscale(0);
 }
@@ -163,8 +163,9 @@ img:hover, video:hover {
 }
 
 #menu{
+    display:none;
     z-index: 2;
-    background-color: white;
+   /* background-color: red;*/
     width:100%;
     float:left;
 }
