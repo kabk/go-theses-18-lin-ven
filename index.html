@@ -6,7 +6,7 @@
 <head>
 	<link rel="icon" href="favicon.png" type="image/png" sizes="15x15">
 	<title>Great concept... Now what? - Lin Ven</title>
-	<!-- <meta property="og:image" content="still.jpg" /> -->
+	
 	<meta charset="utf8"/>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 
@@ -43,8 +43,8 @@
 				<div id="chapter">
 					<h2 style="margin-top:0px">THEORY</h2>
 				</div>
-				
-					<div id="menu" style="z-index:2">
+
+					<div id="menu">
     					<input id="button1" type="button" onclick="location.href='#chapter1';" value="0. Abstract" />
     					<input id="button2" type="button" onclick="location.href='#chapter2';" value="1. Introduction: Theory and Action" />
     					<input id="button3" type="button" onclick="location.href='#chapter3';" value="2. What makes a Thought Transform in an Action?" />
@@ -291,6 +291,13 @@
 				<div id="chapter">
 					<h2 style="margin-top:0px">PRACTICE</h2>
 				</div>
+
+				<div id="menu">
+    					<input id="button1" type="button" onclick="location.href='#case1';" value="Case #1" />
+    					<input id="button2" type="button" onclick="location.href='#case2';" value="Case #2" />
+    					<input id="button3" type="button" onclick="location.href='#case3';" value="Case #3" />
+    					<input id="button4" type="button" onclick="location.href='#case4';" value="Case #4" />
+           			</div>
 			</div>
 
 			<div class="panel-scrolling-container"  >
@@ -304,7 +311,7 @@
 							</div>
 							
 
-							<h2 class="case">Case #1</h2>
+							<h2 class="case" id="case1">Case #1</h2>
 							<h4>A participatory design approach makes you work <span style="text-decoration:underline">with</span> a subject instead of <span style="text-decoration:underline">about</span> a subject.</h4>
 
 							<h4>A participatory design approach challenges your prior assumptions and can lead to unexpected and effective results.</h4>
@@ -374,18 +381,18 @@
 
 							<img src="images/practice/RSC.png" alt="">
 
-							<h2 class="case">Case #2</h2>
+							<h2 class="case" id="case2">Case #2</h2>
 							<h4>A participatory design approach leads to the possibility of creating content as a designer.</h4>
 							<p>content here</p>
 							<br>
 
-							<h2 class="case">Case #3</h2>
+							<h2 class="case" id="case3">Case #3</h2>
 							<h4>A participatory design approach makes it able to measure the effects of your design.
 							</h4>
 							<p>content here</p>
 							<br>
 
-							<h2 class="case">Case #4</h2>
+							<h2 class="case" id="case4">Case #4</h2>
 							<h4>A participatory approach does not always lead to the desired effect. It can still function as a personal outlet.</h4>
 							<p>content here</p>
 
@@ -408,9 +415,6 @@
     var rightPane = document.getElementById('casestudies');
     var paneSep = document.getElementById('panes-separator');
 
-    // The script below constrains the target to move horizontally between a left and a right virtual boundaries.
-    // - the left limit is positioned at 10% of the screen width
-    // - the right limit is positioned at 90% of the screen width
     var leftLimit = 10;
     var rightLimit = 90;
 
