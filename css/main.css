@@ -163,7 +163,7 @@ img:hover, video:hover, iframe:hover {
 }
 
 #menu{
-/*    display:none;*/
+    display:none;
     z-index: 2;
    /* background-color: red;*/
     width:100%;
@@ -292,6 +292,7 @@ img:hover, video:hover, iframe:hover {
 }
 
 .panes-separator h4{
+
     width: 100vh;
     position:relative;
     bottom: 8.8vh; 
@@ -367,5 +368,14 @@ img:hover, video:hover, iframe:hover {
     visibility: visible;
     opacity: 1;
 }
+
+#myGlower {
+            transition: color 1s linear;
+}
+
+#myGlower.active {
+    color:red;
+}
+
 
 

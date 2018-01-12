@@ -282,7 +282,7 @@
 <div class="panes-separator" id="panes-separator">
 
 <h2 style="margin-top:0px">&</h2>
-<h4>A case for applied graphic design</h4>
+<h4 id="myGlower">A case for applied graphic design</h4>
 </div>
 
 		<div class="panel-container right-pane" id="casestudies">
@@ -448,6 +448,13 @@
     }, null, 'horizontal');
 
 
+</script>
+
+<script>
+	var glower = $('#myGlower');
+	window.setInterval(function() {  
+    glower.toggleClass('active');
+}, 2000);
 </script>
 	
 
