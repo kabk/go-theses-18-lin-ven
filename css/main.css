@@ -177,6 +177,10 @@ img:hover, video:hover, iframe:hover {
     z-index:1;
 }
 
+.print-credits{
+    display:none;
+}
+
 .credits-2{
     width: 50%;
     font-size:12px;
