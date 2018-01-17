@@ -405,11 +405,13 @@ img:hover, video:hover, iframe:hover {
 }
 /*print*/
 
+ @page {
+       @bottom-left {
+            content: counter(page) "/" counter(pages);
+        }
+     }
+
 @media print {
-
-    div {
-
-    }
 
     .chapter {
   /*     page-break-before: always;*/
@@ -417,19 +419,20 @@ img:hover, video:hover, iframe:hover {
     }
 
     .panel-container{
-        width:180mm;
-        margin:10mm auto;
+        width:120mm;
+ /*       margin:10mm auto;*/
     }
 
     .panels{
         height:100%;
-        width:180mm;
+        width:150mm;
         text-align: left;
         display:table;
         float:none;
         margin-top:0mm;
         margin-bottom:20mm;
-        margin-left:15mm;
+        margin-left:30mm;
+
     }
 
 
@@ -442,6 +445,7 @@ img:hover, video:hover, iframe:hover {
     .title{
         page-break-after:always;
         margin-bottom: 100mm;
+        color:white;
     }
 
     #web-title{
@@ -451,13 +455,17 @@ img:hover, video:hover, iframe:hover {
     #print-title{
         display:block;
     }
+
+    #print-title h2{
+        color:none;
+    }
     .panes-separator {
         display:none;
     }
 
-    p {
+   /* div, p {
        page-break-inside: avoid;
-    }
+    }*/
 
     h2{
         text-align: center;
@@ -470,8 +478,12 @@ img:hover, video:hover, iframe:hover {
     }
 
 
-    #chapter5, #chapter6, #chapter7, #chapter8, #casestudies, #case3, #case4{
+.chapter,#casestudies, #case3, #case4{
         page-break-before:always;
+    }
+
+    #chapter1{
+        page-break-before: none;
     }
 
     img, video, iframe{
@@ -483,9 +495,9 @@ img:hover, video:hover, iframe:hover {
     }
     
     .print-reference{
-        display:inherit;
-        background-color: red;
-        color:black;
+        display:inline;
+        color:red;
+        font-size: 10pt;
     }
 
     span{
