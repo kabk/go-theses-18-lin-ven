@@ -470,9 +470,10 @@ img:hover, video:hover, iframe:hover {
 
     .print-credits{
            page-break-after:always;
+           display:block;
 /*    color:red;*/
 
-    width:50mm;
+    width:100mm;
     text-align: center;
     margin:0 auto;
     }
@@ -491,6 +492,9 @@ img:hover, video:hover, iframe:hover {
 
     #print-title h2{
         color:none;
+    }
+    #print-title h4{
+        display:block;
     }
     .panes-separator {
         display:none;
@@ -511,19 +515,25 @@ img:hover, video:hover, iframe:hover {
     }
 
 
-.chapter, #casestudies, #case3, .case{
+   #chapter2, #chapter3, #chapter5, #chapter6, #chapter9, #casestudies, #case3, .case{
         page-break-before:always;
     }
 
-    #chapter1{
+    #chapter1, #chapter4, #chapter7{
         page-break-before: none;
+    }
+
+    .panel-scrolling-container{
+        page-break-before: always;
     }
 
     #conclusion-1{
         page-break-before: none;
         page-break-after: always;
     }
-
+    .left-pane{
+        display:none;
+    }
     img, video, iframe{
         filter:none;
     }
