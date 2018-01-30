@@ -142,6 +142,12 @@ img:hover, video:hover, iframe:hover {
     -webkit-filter: grayscale(0);
 }
 
+.date{
+    color:red;
+    margin-bottom: -5vh;
+    font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
+}
+
 
 
 /*CONTENT*/
@@ -169,13 +175,14 @@ img:hover, video:hover, iframe:hover {
 
 .credits{
 /*    color:red;*/
+height:50px;
     width:89vw;
     float:left;
     position:absolute;
-    text-align: right;
-    margin-top: 30px;
+    text-align: left;
+    margin-top: 50px;
     margin-left:20px;
-    z-index:1;
+    z-index:3;
 }
 
 .print-credits{
