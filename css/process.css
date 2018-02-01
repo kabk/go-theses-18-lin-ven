@@ -33,6 +33,10 @@ li {
     margin:0px;
 }
 
+#theory p{
+    margin-bottom: 100px;
+}
+
 
 ::selection {
   color: black;
@@ -96,6 +100,13 @@ h4{
 
 }
 
+#theory .caption{
+    margin-top: 0vh;
+}
+
+#theory .date{
+    margin-bottom: 0vh;
+}
 
 /*ordeblue list on line 197 theory*/
 ul,ol { 
@@ -147,9 +158,9 @@ img:hover, video:hover, iframe:hover {
 }
 
 #theory .date{
-    margin-top: -4vh;
+    margin-top: 10px;
     font-size: 12px;
-    margin-bottom: 5vh;
+    margin-bottom: 2px;
     color:black;
 }
 
@@ -159,6 +170,7 @@ img:hover, video:hover, iframe:hover {
 
 #wrapper_intro {
     width: 90vw;
+    height:0vh;
     padding-top: 2vh;
     margin-top: 0;
     margin-left: auto;
@@ -305,7 +317,7 @@ height:50px;
     width: 100%;
     max-width: 100%;
     display: block;
-    margin-bottom: 5vh;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto; 
 }   
@@ -335,7 +347,7 @@ height:50px;
 .panes-separator {
     background-color: white;
     width: 3vw;
-    height:100vh;
+    height:105vh;
     position: relative;
     cursor: col-resize;
     z-index:1;
