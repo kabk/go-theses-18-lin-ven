@@ -19,8 +19,18 @@ body {
     font-smoothing: antialiased;
     font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight:"light";
-    font-size:1px;
+    font-size:12px;
     overflow:hidden;
+}
+
+p,li  {
+    margin-bottom:25px;
+    font-size: 17px;
+    line-height:120%;
+}
+
+li {
+    margin:0px;
 }
 
 
@@ -37,6 +47,7 @@ font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
 #casestudies p,#casestudies h1,#casestudies h2,#casestudies h3,#casestudies li,#casestudies th,#casestudies td,#casestudies div, .quote{
     font-weight:"light";    
 }
+
 
 
 /*Hoofdstukken*/
@@ -77,31 +88,16 @@ h4{
 }
 
 
-p {
-    margin-bottom:12px;
-}
-
-
-#theory p{
-    font-size: 20px;
-    line-height:150%;
-}
-
-#casestudies{
-    font-size:17px;
-    line-height:180%;
-}
 
 .caption{
-/*    font-style: italic;*/
     text-align: left;
     margin-top: -5vh;
     margin-bottom: 5vh;
-    font-size: 10px;
+
 }
 
 
-/*ordered list on line 197 theory*/
+/*ordeblue list on line 197 theory*/
 ul,ol { 
     margin-bottom: 5vh;
 }
@@ -122,12 +118,12 @@ th {
 
 
 a, a:visited{
-    color:red;
+    color:blue;
     text-decoration: none;
 }
 
 a:hover{
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid blue;
 }
 
 img, video, iframe{
@@ -142,10 +138,19 @@ img:hover, video:hover, iframe:hover {
     -webkit-filter: grayscale(0);
 }
 
-.date{
-    color:red;
+#casestudies .date{
+    margin-top: -4vh;
+    font-size: 12px;
+    color:blue;
     margin-bottom: -5vh;
-    font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
+
+}
+
+#theory .date{
+    margin-top: -4vh;
+    font-size: 12px;
+    margin-bottom: 5vh;
+    color:black;
 }
 
 
@@ -154,9 +159,11 @@ img:hover, video:hover, iframe:hover {
 
 #wrapper_intro {
     width: 90vw;
+    padding-top: 2vh;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 } 
 
 .title h2{
@@ -166,15 +173,15 @@ img:hover, video:hover, iframe:hover {
     padding-left:60px;
     color:white;
    -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: red;
+   -webkit-text-stroke-color: blue;
 }
 
 #print-title{
     display:none;
 }
 
-.credits{
-/*    color:red;*/
+.cblueits{
+/*    color:blue;*/
 height:50px;
     width:89vw;
     float:left;
@@ -185,11 +192,11 @@ height:50px;
     z-index:3;
 }
 
-.print-credits{
+.print-cblueits{
     display:none;
 }
 
-.credits-2{
+.cblueits-2{
     width: 50%;
     font-size:12px;
     font-style:italic;
@@ -201,7 +208,7 @@ height:50px;
 #menu{
     display:none;
     z-index: 2;
-   /* background-color: red;*/
+   /* background-color: blue;*/
     width:100%;
     float:left;
 }
@@ -225,7 +232,7 @@ height:50px;
 }
 
 .abstract-2 p{
-/*    border-bottom: 2px solid red;*/
+/*    border-bottom: 2px solid blue;*/
 }
 
 .abstract h2, .abstract-2 h2{
@@ -233,7 +240,7 @@ height:50px;
 }
 
 /*.abstract:hover, .abstract-2:hover, .conclusion:hover{
-    color:red;
+    color:blue;
      -webkit-transition: all .4s ease-in-out; 
 }*/
 
@@ -252,7 +259,7 @@ height:50px;
 
     zoom: 1;
     float: left;
-        height: 100%;
+    height: 100%;
     width:50vw;
 }
 
@@ -271,7 +278,7 @@ height:50px;
     float: left;
     width: 100%;
     height:60px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid blue;
 }
 
 #chapter{
@@ -285,7 +292,7 @@ height:50px;
 .panel-scrolling-container {
     margin-left: 20px;
     float: left;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     position:relative;
     overflow-x:none;
@@ -294,7 +301,7 @@ height:50px;
     
 }
 
-.panel-scrolling-container img, video {
+.panel-scrolling-container img, video, iframe {
     width: 100%;
     max-width: 100%;
     display: block;
@@ -318,6 +325,7 @@ height:50px;
     widows: 60%;
     width: calc(100% - 50px);
     margin-bottom: 400px;
+    margin-top: 20px;
 }
 
 
@@ -350,7 +358,7 @@ height:50px;
 }
 
 .panes-separator h4:hover{
-    color:red;
+    color:blue;
      -webkit-transition: all .4s ease-in-out; 
 }
 
@@ -368,7 +376,7 @@ height:50px;
   margin-right: 1px;
   height: 7px;
   width: 7px;
-  border: 2px solid red;
+  border: 2px solid blue;
   background-color: white;
 }
 
@@ -380,7 +388,7 @@ height:50px;
 /*tekst onderlijnd*/
 .reference{
     position:relative;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid blue;
 }
 
 
@@ -397,7 +405,7 @@ height:50px;
     font-size: 14px;
     line-height:140%;
     background-color: white;
-    color: red;
+    color: blue;
     text-align: left;
     border-radius: 6px;
     padding: 5px 0;
@@ -420,7 +428,7 @@ height:50px;
 }
 
 #myGlower.active {
-    color:red;
+    color:blue;
 }
 
 @page{
@@ -476,7 +484,7 @@ height:50px;
 
     }
 
-    .credits{
+    .cblueits{
         display: none;
     }
 
@@ -542,7 +550,7 @@ height:50px;
     
     .print-reference{
         display:inline;
-        color:red;
+        color:blue;
         font-size: 10pt;
     }
 
@@ -550,7 +558,7 @@ height:50px;
         color:black;
     }
 
-    #credits-2-links{
+    #cblueits-2-links{
         display:none;
     }
 
@@ -562,7 +570,7 @@ height:50px;
         margin-bottom: 2vh;
     }
 
-    .credits-2{
+    .cblueits-2{
         width:70%;
     }
 

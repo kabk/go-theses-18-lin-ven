@@ -286,7 +286,7 @@ img:hover, video:hover, iframe:hover {
     
 }
 
-.panel-scrolling-container img, video {
+.panel-scrolling-container img, video, iframe {
     width: 100%;
     max-width: 100%;
     display: block;
