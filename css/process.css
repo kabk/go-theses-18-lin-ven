@@ -137,12 +137,7 @@ a:hover{
     border-bottom: 1px solid blue;
 }
 
-img, video, iframe{
-  
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .4s ease-in-out;  
-}
+
 
 img:hover, video:hover, iframe:hover {
     filter: none;
