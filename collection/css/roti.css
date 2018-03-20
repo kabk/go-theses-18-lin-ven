@@ -62,3 +62,17 @@ a:visited{
 	margin-top: 300vh;
 }
 
+/*work page*/
+
+
+div.float {
+
+height:300px;
+position:fixed;
+    
+}
+
+.float video{
+    height:300px;
+}
+

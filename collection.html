@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="collection/css/roti.css">
 
 	<script type="text/javascript" src="collection/js/sound-mouseover.js"></script>
-	<script type="text/javascript" src="scripts/jquery.min.js">
-	<script type="text/javascript" src="scripts/jump.js">
-
-	</script>
+	<script type="text/javascript" src="collection/js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="collection/js/jump.js">
+	</script> -->
+	<script type="text/javascript" src="collection/js/float.js"></script>
 
 
 
@@ -19,7 +19,7 @@
 	
 	<div class="menu">
 		<div id="menu-item">
-			<a onmouseover="playclip();"><h1>WORK</h1></a>	
+			<a onmouseover="playclip();" href="collection/work.html"><h1>WORK</h1></a>	
 		</div>
 
 		<div id="menu-item">
@@ -31,23 +31,34 @@
 		</div>
 	</div>
 		
-		<div class="footer">
-			<img src="collection/images/zwaai.gif" alt="">
-		</div>
+
+
+
+	<div class="footer">
+		<img src="collection/images/zwaai.gif" alt="">
+	</div>
 	
 
 	
 
-<div id="sounddiv">
-	<audio>
-		<source src="collection/sound/sound-1.m4a"></source>
-	</audio>
-</div>
-<script>$('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000, function() {
-    $(this).animate({ scrollTop: 0 }, 1000);
-});</script>
+	<div id="sounddiv">
+		<audio>
+			<source src="collection/sound/sound-1.m4a"></source>
+		</audio>
+	</div>
+
+
+
+   <div class="float">
+        <video autoplay muted loop src="collection/images/potato.mp4"></video>
+    </div>
 
 </body>
+
+	<script>
+		$('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000, function() {
+    	$(this).animate({ scrollTop: 0 }, 1000);});
+	</script>
 </html>
 
 
