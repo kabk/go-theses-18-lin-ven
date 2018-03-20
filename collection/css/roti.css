@@ -87,6 +87,12 @@ position:fixed;
     height:300px;
 }
 
+.float img{
+    height:300px;
+}
+
+
+
 /* background video*/
 
 #myVideo {
