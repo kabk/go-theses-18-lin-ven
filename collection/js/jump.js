@@ -14,3 +14,5 @@ window.onload = function() {
 	img.style.top = xy[0] + 'px';
 	img.style.left = xy[1] + 'px';
 }
+
+
