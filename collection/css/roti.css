@@ -11,6 +11,7 @@
 
 html, body
 {
+
 	
 }
 
@@ -18,18 +19,46 @@ body
 {
 	position:relative;
 	font-size:14px;
-	color:#666;
 }
 
-a {text-decoration: none;}
-
-a:hover{
-	cursor: pointer;
-}
 h1{
 	font-size:60px;
 	color:black;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+	text-decoration: underline red;
+}
+
+a:visited{
+	color:red;
+	text-decoration: none;
+}
+
+.menu{
+	width: 300px;
+	height: 250px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding:10px;
+}
+
+#menu-item{
+	margin-bottom: 10px;
+}
+
+.footer{
+	font-size: 40px;
+	width:30vw;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-left: 35vw;
+	margin-top: 300vh;
+}
 

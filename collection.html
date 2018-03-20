@@ -3,29 +3,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ROTI 2</title>
+	<title>Harvesting Expectations</title>
 	<link rel="stylesheet" type="text/css" href="collection/css/roti.css">
+
 	<script type="text/javascript" src="collection/js/sound-mouseover.js"></script>
+	<script type="text/javascript" src="scripts/jquery.min.js">
+	<script type="text/javascript" src="scripts/jump.js">
+
+	</script>
+
 
 
 </head>
 <body>
 	
-
-		<div>
+	<div class="menu">
+		<div id="menu-item">
 			<a onmouseover="playclip();"><h1>WORK</h1></a>	
 		</div>
 
-		<div>
-			<a href="collection/contact.html"><h1>INFO</h1></a>	
+		<div id="menu-item">
+			<a href="collection/info.html"><h1>INFO</h1></a>	
 		</div>
 
-		<div>
-			<a ><h1>CONTACT</h1></a>	
+		<div id="menu-item">
+			<a href="collection/contact.html" ><h1>CONTACT</h1></a>	
 		</div>
-
+	</div>
 		
-
+		<div class="footer">
+			<img src="collection/images/zwaai.gif" alt="">
+		</div>
+	
 
 	
 
@@ -34,6 +43,9 @@
 		<source src="collection/sound/sound-1.m4a"></source>
 	</audio>
 </div>
+<script>$('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000, function() {
+    $(this).animate({ scrollTop: 0 }, 1000);
+});</script>
 
 </body>
 </html>

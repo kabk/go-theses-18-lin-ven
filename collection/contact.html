@@ -2,83 +2,76 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="collection/css/roti.css">
 <style>
-
-
 * {
-    padding:0; 
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:400;
-    font-style:normal;
-    line-height:normal;
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
 
-body {font-family: Arial, Helvetica, sans-serif;}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
 
-input[type=text], select, textarea {
+.content {
+    position: fixed;
+    bottom: 0;
+    color: #f1f1f1;
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    -moz-transform: scale(-1, 1);
--webkit-transform: scale(-1, 1);
--o-transform: scale(-1, 1);
--ms-transform: scale(-1, 1);
-transform: scale(-1, 1);  
-}
-
-
-input[type=submit]:hover {
-
-}
-
-.container {
-    border-radius: 5px;
-
     padding: 20px;
 }
 
-#lname{
-    width:43vw;
-      margin-left: 26vw;
-    margin-top: 6vh;
+#myBtn {
+	margin:0px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
 }
 
-#google{
-    width:280px;
-    margin-left: 38vw;
-    margin-top: 18vh;
-}
-
-#thumbs{
-    width:40vw;
-    margin-left: 30vw;
+#myBtn:hover {
+    color: red;
 }
 </style>
-
 </head>
 <body>
 
-    <div><a href="">
-        <img src="images/rechtsboven.png" style="float:right" alt="">
-        </a>
-    </div>
-<div class="container">
-  <form action="/action_page.php">
-    <img id="google" src="images/google.png" alt="">
- 
-    <input type="text" id="lname" name="lastname" >
+<video autoplay muted loop id="myVideo">
+  <source src="images/achteruitloop-2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-  </form>
+<div class="content">
+  <button id="myBtn" onclick="myFunction()">PAUSE</button>
 </div>
 
-<div><a href="">
-        <img id="thumbs" src="images/thumbs.png" alt="">
-        </a>
-    </div>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 
 </body>
 </html>
